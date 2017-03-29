@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :books
-  root to: 'books#list'
+  #resources :books
+  root to: 'book#list'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

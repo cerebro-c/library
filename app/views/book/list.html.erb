@@ -1,0 +1,11 @@
+<% if @books.blank? %>
+	<p>There are no book currently in the system</p>
+<% else%>
+	<p>These are the current books in our system</p>
+
+	<ul id="books">
+		<% @books.each do |b|%>
+			
+		<% end -%>
+	</ul>
+<% end %>
