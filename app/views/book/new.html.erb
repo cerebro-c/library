@@ -1,6 +1,6 @@
 <h1>Add new book</h1>
 
-<%= form_tag do %>
+<%= form_tag :action => 'create' do %>
 <p><label for="book_title">Title</label>:
 <%= text_field 'books', 'title' %></p>
 <p><label for="book_price">Price</label>:
@@ -10,5 +10,6 @@
 %></p>
 <p><label for="book_description">Description</label><br/>
 <%= text_area 'books', 'description' %></p>
-<%= submit_tag %>
+<%= submit_tag 'Create' %>
 <% end -%>
+<%= link_to 'Back', {:action => 'list'} %>
